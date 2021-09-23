@@ -2,7 +2,7 @@ let p2pPeer = new Peer();
 let p2pConn; 
 
 const DEFAULT_CONFIG = {
-	oceServers: [{
+	iceServers: [{
 		urls: 'stun:stun.l.google.com:19302'
 	}],
 };
