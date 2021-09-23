@@ -1,11 +1,11 @@
-let p2pPeer = new Peer();
-let p2pConn; 
-
-const DEFAULT_CONFIG = {
+let p2pPeer = new Peer({
+	'config': {
 	iceServers: [{
 		urls: 'stun:stun.l.google.com:19302'
-	}],
-};
+	}]
+	}
+});
+let p2pConn;
 
 function connectTo(value, intCode) {
 	// on open will be launch when you successfully connect to PeerServer
